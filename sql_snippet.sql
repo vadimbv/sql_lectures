@@ -17,21 +17,21 @@ create table invoices (
 
 with
 invoices(invoice_num, country, counterparty, amount) as (
-  select 'invoice-07', 'BY', 'B1', 1000 from dual union all
-  select 'invoice-08', 'KZ', 'K1', 20 from dual union all
-  select 'invoice-09', 'KZ', 'K1', 10 from dual union all
-  select 'invoice-10', 'KZ', 'K2', 90 from dual union all
-  select 'invoice-11', 'KZ', 'K3', 40 from dual union all
-  select 'invoice-12', 'KZ', 'K4', 10 from dual union all
-  select 'invoice-13', 'KZ', 'K4', 20 from dual union all
-  select 'invoice-14', 'KZ', 'K4', 80 from dual union all
-  select 'invoice-15', 'KZ', 'K5', 30 from dual union all
-  select 'invoice-01', 'RU', 'R1', 900 from dual union all
-  select 'invoice-02', 'RU', 'R2', 300 from dual union all
-  select 'invoice-03', 'RU', 'R3', 200 from dual union all
-  select 'invoice-04', 'RU', 'R4', 500 from dual union all
-  select 'invoice-05', 'RU', 'R4', 400 from dual union all
-  select 'invoice-06', 'RU', 'R5', 600 from dual
+  select 'invoice-07', 'BY', 'B1', 1000 union all
+  select 'invoice-08', 'KZ', 'K1', 20 union all
+  select 'invoice-09', 'KZ', 'K1', 10 union all
+  select 'invoice-10', 'KZ', 'K2', 90 union all
+  select 'invoice-11', 'KZ', 'K3', 40 union all
+  select 'invoice-12', 'KZ', 'K4', 10 union all
+  select 'invoice-13', 'KZ', 'K4', 20 union all
+  select 'invoice-14', 'KZ', 'K4', 80 union all
+  select 'invoice-15', 'KZ', 'K5', 30 union all
+  select 'invoice-01', 'RU', 'R1', 900 union all
+  select 'invoice-02', 'RU', 'R2', 300 union all
+  select 'invoice-03', 'RU', 'R3', 200 union all
+  select 'invoice-04', 'RU', 'R4', 500 union all
+  select 'invoice-05', 'RU', 'R4', 400 union all
+  select 'invoice-06', 'RU', 'R5', 600 
 )
 <put your code here>
 
