@@ -1,17 +1,15 @@
 Предположим, у вас есть таблица sales, которая содержит информацию о продажах различных товаров в разных магазинах по разным годам. Задача состоит в том, чтобы получить общую сумму продаж по годам, по магазинам и в общем.
 
+```sql
 SELECT
-    TO_CHAR(sale_date, 'YYYY') AS sale_year,
-    store_id,
-    SUM(sale_amount) AS total_sales
+    region,
+    category,
+    SUM(sales) AS total_sales
 FROM
-    sales
+    orders
 GROUP BY
-    GROUPING SETS (
-        (TO_CHAR(sale_date, 'YYYY'), store_id), -- по годам и магазинам
-        (TO_CHAR(sale_date, 'YYYY')),           -- только по годам
-        ()                                      -- общая сумма по всему
-    );
+    ROLLUP(region, category);
+```
 
 В этом запросе:
 
