@@ -2,13 +2,17 @@
 
 ```sql
 SELECT
-    region,
-    category,
-    SUM(sales) AS total_sales
+    TO_CHAR(sale_date, 'YYYY') AS sale_year,
+    store_id,
+    SUM(sale_amount) AS total_sales
 FROM
-    orders
+    sales
 GROUP BY
-    ROLLUP(region, category);
+    GROUPING SETS (
+        (TO_CHAR(sale_date, 'YYYY'), store_id), -- по годам и магазинам
+        (TO_CHAR(sale_date, 'YYYY')),           -- только по годам
+        ()                                      -- общая сумма по всему
+    );
 ```
 
 В этом запросе:
