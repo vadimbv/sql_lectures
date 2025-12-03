@@ -399,20 +399,6 @@ Q2      | 2024 | Office Supplies | 1      | 120         | 220            | 110.0
 Q3      | 2024 | Electronics     | 1      | 1050        | 2150           | 1050.00       | 63.98          | 1         | -4.55%          | 3150           | Hot
 Q3      | 2024 | Furniture       | 1      | 480         | 930            | 443.33        | 29.27          | 2         | +6.67%          | 1330           | Normal
 Q3      | 2024 | Office Supplies | 1      | 110         | 230            | 110.00        | 6.71           | 3         | -8.33%          | 330            | Cold
-...```
-
-### Требуемый результат
+...
 ```
-quarter | year | category_name     | order_count | total_sales | sales_percent | rank_in_quarter | status
---------|------|-------------------|-------------|-------------|---------------|-----------------|--------
-Q1      | 2025 | Electronics       | 2           | 2000        | 60.61         | 1               | Hot
-Q1      | 2025 | Furniture         | 1           | 500         | 15.15         | 2               | Normal
-Q1      | 2025 | Office Supplies   | 1           | 150         | 4.55          | 3               | Cold
-Q2      | 2025 | Electronics       | 1           | 950         | 45.45         | 1               | Hot
-Q2      | 2025 | Furniture         | 1           | 700         | 33.33         | 2               | Normal
-Q2      | 2025 | Office Supplies   | 1           | 200         | 9.52          | 3               | Cold
-Q3      | 2025 | Electronics       | 1           | 1100        | 61.11         | 1               | Hot
-Q3      | 2025 | Office Supplies   | 1           | 300         | 16.67         | 2               | Normal
-```
----
 
